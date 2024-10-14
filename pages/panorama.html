@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepal-Automan</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+    <a-scene>
+        <img src="../images/panorama1.jpg" alt="" id="panorama">
+        <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+        <!-- Сфера для панорамы -->
+        <!-- <a-sphere src="#panorama" radius="100" rotation="0 -90 0" segments-height="64" segments-width="64"
+            side="double"></a-sphere> -->
+
+        <!-- Камера -->
+        <a-entity camera look-controls position="0 1.6 0"></a-entity>
+    </a-scene>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.168.0/three.webgpu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.168.0/three.webgpu.min.js"></script>
+</body>
+
+</html>

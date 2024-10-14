@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url(../fonts/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'SansitaOne';
+    src: url(../fonts/SansitaOne.ttf);
+}
+
+@font-face {
+    font-family: 'ScodaNext';
+    src: url(../fonts/SKODANext-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ScodaPro';
+    src: url(../fonts/SkodaPro.ttf);
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url(../fonts/tahoma.ttf);
+}
+
+@font-face {
+    font-family: 'Nebulosa';
+    src: url(../fonts/NebulosaBlackDisplayStencil.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NebulosaC';
+    src: url(../fonts/NebulosaBlackDisplayStencilCyrillic-Regular.ttf);
+}

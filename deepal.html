@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepal-Automan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <!-- head -->
+    <header class="header">
+        <div class="header_block">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse main_nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active nav_link" data-main aria-current="page"
+                                    href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active nav_link" data-contacts aria-current="page"
+                                    href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle service_toggle" data-service aria-current="page"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Сервис
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" data-book-service
+                                            href="service-request.html">Записаться на сервис</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse nav_right" id="navbarSupportedContent">
+
+                        <form class="d-flex" role="search">
+                            <a href="test-drive.html" class="btn btn-outline-success" data-testdrive
+                                type="submit">Тест-драйв</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide deepal_slide">
+                        <img src="images/deepal_slide/s7.jpg" alt="">
+                        <div class="slide_bloc">
+                            <a href="#section_bloc" data-model-about class="swiper_btn s7_btn">Подробнее</a>
+                            <div class="model_price"><span>от</span> 353 000 000 сум</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide deepal_slide">
+                        <img src="images/deepal_slide/SL03.jpg" alt="">
+                        <div class="slide_bloc">
+
+                            <a href="#section_bloc" data-model-about class="swiper_btn sl03_btn">Подробнее</a>
+                            <div class="model_price"><span>от</span> 325 000 000 сум</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="section_bloc"></section>
+        </section>
+        <!-- смена секций в зависимости от модели авто -->
+        <section class="section_bloc">
+            <div class="s7_bloc">
+                <section>
+                    <div class="main_item">
+                        <div class="container">
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <a href="#style" class="main_list-item-link">
+                                        Конфигурация
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#interior" class="main_list-item-link">
+                                        Интерьер
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#exterior" class="main_list-item-link">
+                                        Экстерьер
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#complection" class="main_list-item-link">
+                                        Комплектации
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="main_style" id="style">
+                        <div class="container">
+                            <div class="main_style-wrapper">
+                                <h2 class="main_style-title">Выбери свой стиль</h2>
+                                <div class="main_style-background" id="style1">
+                                    <img class="style1_bg" src="images/s7_mini-slide/deepal1.png" alt="Car Image">
+                                </div>
+
+                                <div class="images">
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal1.png"
+                                        style="background-color: #ffffff;"></div>
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal2.png"
+                                        style="background-color: #A7BBBE;"></div>
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal3.png"
+                                        style="background-color: #1F2632;"></div>
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal4.png"
+                                        style="background-color: #485059;"></div>
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal5.png"
+                                        style="background-color: #B8C86E;"></div>
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal6.png"
+                                        style="background-color: #CD7161;"></div>
+                                </div>
+                                <a href="#" class="style_pre-btn">Предзаказ</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="pre_order">
+                        <div class="container">
+                            <div class="pre_order-form">
+                                <div class="preOrder-section">
+                                    <div class="preOrder-section-head">
+                                        <h6 class="preOrder-section-title">Автомобиль</h6>
+                                    </div>
+                                    <div class="block_inputs">
+                                        <div class="input seelct_input ">
+                                            <form class="form_input">
+                                                <label for="model-select">Комплектация</label>
+                                                <select name="model" id="model-select">
+                                                    <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                    <option value="s7-hybrid">Deepal S7 Hybrid</option>
+                                                    <option value="s7-electro">Deepal S7 Electro</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <div class="input  seelct_input">
+                                            <form class="form_input">
+                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select">
+                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="preOrder-section-head">
+                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                    </div>
+                                    <div class="input2 js-input">
+                                        <div class="form-radio js-radio-group" data-name="legal_entity">
+                                            <a href="#" class="radio js-radio" data-value="2">
+                                                <!-- <span class="radio-input"></span> -->
+                                                <input type="radio" name="individual" id="individual">
+                                                <span class="radio-label">Физическое лицо</span>
+                                            </a>
+                                            <a href="#" class="radio js-radio" data-value="1">
+                                                <!-- <span class="radio-input"></span> -->
+                                                <input type="radio" name="legal" id="legal">
+                                                <span class="radio-label">Юридическое лицо</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="group_inputs">
+                                        <div class="input js-input input_fields ">
+                                            <div class="input-label">Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                        </div>
+                                        <div class="input js-input  input_fields">
+                                            <div class="input-label">Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="form_btn" onclick="sendForm()">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="interior"></section>
+                <section>
+                    <div class="interior">
+                        <div class="container">
+                            <div class="interior_items">
+                                <h2 class="interior_title">Интерьер</h2>
+                                <div class="interior_background">
+                                    <div class="image_size">
+                                        <img src="images/interior/s7-interior.jpg" alt="">
+                                        <div class="interior1">
+                                            <span>Почувствуйте себя в салоне автомобиля ↓</span>
+                                            <a href="https://pano.autohome.com.cn/car/pano/60965#pvareaid=3454451"
+                                                target="_blank">
+                                                <img src="images/360_110x64.png" alt="icon 360 degrees"></a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="exterior">
+                    <div class="exterior">
+                        <div class="container">
+                            <div class="interior_items">
+                                <h2 class="interior_title">Экстерьер</h2>
+                                <div class="interior_background">
+                                    <div class="image_size">
+                                        <img src="images/exterior/s7.jpg" alt="">
+                                        <div class="interior1">
+                                            <span>Оцените внешний вид автомобиля не выходя из дома ↓</span>
+                                            <a href="https://pano.autohome.com.cn/car/ext/60965?appversion="
+                                                target="_blank">
+                                                <img src="images/360_110x64.png" alt="icon 360 degrees"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="complection">
+                    <div class="complete">
+                        <div class="container">
+                            <h2 class="complete_title">Комплектации</h2>
+                            <div class="elementor-element elementor-element-c66cbd8 elementor-widget elementor-widget-html"
+                                data-id="c66cbd8" data-element_type="widget" data-widget_type="html.default">
+                                <div class="elementor-widget-container">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <td>Комплектация</td>
+                                                <td>Deepal S7 - EV 520 max</td>
+                                                <td>Deepal S7 - EV 520 pro</td>
+                                                <td>Deepal S7 - 620 km</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Зданий привод</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бесключевой доступ: полный автомобиль</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Адаптивный круиз-контроль</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Мошность двигателя</td>
+                                                <td>190 кВт/258 л.с</td>
+                                                <td>190 кВт/258 л.с</td>
+                                                <td>160 кВт/217 л.с</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Head Up - проекция на лобовое стекло</Head>
+                                                </td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Память зеркал</td>
+                                                <td>√</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Передний/Задний, 360 камера | Автопарковка</td>
+                                                <td>√ | √</td>
+                                                <td>√ | -</td>
+                                                <td>√ | √</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Максимальная скорость (км/ч)</td>
+                                                <td>180</td>
+                                                <td>180</td>
+                                                <td>180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Трехкомпонентная литиевая батарея</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Максимальная скорость (км/час)</td>
+                                                <td>180</td>
+                                                <td>180</td>
+                                                <td>180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Источники дальнего и ближнего света</td>
+                                                <td>LED, 64 цветная круговая подсветка</td>
+                                                <td>LED</td>
+                                                <td>LED, настраиваемая 64 цветная подсветка салона</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Разгон 0-100 км/ч</td>
+                                                <td>6.7 сек</td>
+                                                <td>6.7 сек</td>
+                                                <td>7.5 сек</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NFC зарядка для телефона:</td>
+                                                <td>40 Вт</td>
+                                                <td>-</td>
+                                                <td>40 Вт</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Климат-контроль</td>
+                                                <td>2 зоны</td>
+                                                <td>2 зоны</td>
+                                                <td>2 зоны</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deepal OS 128/12 Gb</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Количество мест</td>
+                                                <td>5 мест: 2 + 3, память сиденья, обдув и обогрев</td>
+                                                <td>5 мест: 2 + 3</td>
+                                                <td>5 мест: 2 + 3, память сиденья, обдув и обогрев</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Расход энергии на 100 км</td>
+                                                <td>14.2 кВт</td>
+                                                <td>14.2 кВт</td>
+                                                <td>14.4 кВт</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Аудио система</td>
+                                                <td>Bluetooth, 16 фирменных колонок, громкоговоритель в подголовнике
+                                                </td>
+                                                <td>Bluetooth, 8 колонок</td>
+                                                <td>Bluetooth, громкоговоритель и колонки в подголовнике</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер центрального экрана(дюйм):</td>
+                                                <td>15.6 поворачивающийся</td>
+                                                <td>15.6 без поворачивания</td>
+                                                <td>15.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Емкость батареи, кВт:</td>
+                                                <td>66.8</td>
+                                                <td>66.8</td>
+                                                <td>79.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Запас хода (км)</td>
+                                                <td>520</td>
+                                                <td>520</td>
+                                                <td>620</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Размер шин</td>
+                                                <td>235/55 R19</td>
+                                                <td>235/55 R19</td>
+                                                <td>235/55 R19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Доп функции</td>
+                                                <td>Напоминание об усталости водителя</td>
+                                                <td>Экстренное торможение AEB-C/I (распознование автомобиля).<br>
+                                                Автоматическое закрытие окон во время дождя
+                                                </td>
+                                                <td>FACE ID</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="download/S7.pdf" download class="download">Скачать файл комплектаций</a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="sl03_bloc">
+                <section>
+                    <div class="main_item">
+                        <div class="container">
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <a href="#style" class="main_list-item-link">
+                                        Конфигурация
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#interior" class="main_list-item-link">
+                                        Интерьер
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#exterior" class="main_list-item-link">
+                                        Экстерьер
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#complection" class="main_list-item-link">
+                                        Комплектации
+                                    </a>
+                                </li>
+                                <li class="main_list-item">
+                                    <a href="#tech" class="main_list-item-link">
+                                        Технические характеристики
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="main_style" id="style">
+                        <div class="container">
+                            <div class="main_style-wrapper">
+                                <h2 class="main_style-title">Выбери свой стиль</h2>
+                                <div class="main_style-background" id="style2">
+                                    <img class="style2_bg" src="images/sl03_mini-slide/sl03-1.png" alt="Car Image">
+                                </div>
+
+                                <div class="images">
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-1.png"
+                                        style="background-color: #091D37;"></div>
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-2.png"
+                                        style="background-color: #506D6F;"></div>
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-3.png"
+                                        style="background-color: #3E4247;"></div>
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-4.png"
+                                        style="background-color: #E6E8EA;"></div>
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-5.png"
+                                        style="background-color: #1C1F22;"></div>
+                                </div>
+                                <a href="#" class="style_pre-btn">Предзаказ</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="pre_order">
+                        <div class="container">
+                            <div class="pre_order-form">
+                                <div class="preOrder-section">
+                                    <div class="preOrder-section-head">
+                                        <h6 class="preOrder-section-title">Автомобиль</h6>
+                                    </div>
+                                    <div class="block_inputs">
+                                        <div class="input seelct_input ">
+                                            <form class="form_input">
+                                                <label for="model-select">Комплектация</label>
+                                                <select name="model" id="model-select">
+                                                    <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                    <option value="s7-hybrid">Deepal SL03 Hybrid</option>
+                                                    <option value="s7-electro">Deepal SL03 Electro</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <div class="input  seelct_input">
+                                            <form class="form_input">
+                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select">
+                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="preOrder-section-head">
+                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                    </div>
+                                    <div class="input2 js-input">
+                                        <div class="form-radio js-radio-group" data-name="legal_entity">
+                                            <a href="#" class="radio js-radio" data-value="2">
+                                                <!-- <span class="radio-input"></span> -->
+                                                <input type="radio" name="individual" id="individual">
+                                                <span class="radio-label">Физическое лицо</span>
+                                            </a>
+                                            <a href="#" class="radio js-radio" data-value="1">
+                                                <!-- <span class="radio-input"></span> -->
+                                                <input type="radio" name="legal" id="legal">
+                                                <span class="radio-label">Юридическое лицо</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="group_inputs">
+                                        <div class="input js-input input_fields ">
+                                            <div class="input-label">Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                        </div>
+                                        <div class="input js-input  input_fields">
+                                            <div class="input-label">Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="form_btn" onclick="sendForm()">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="interior">
+                    <div class="interior">
+                        <div class="container">
+                            <div class="interior_items">
+                                <h2 class="interior_title">Интерьер</h2>
+                                <div class="interior_background">
+                                    <div class="image_size">
+                                        <img src="images/interior/sl03-interior1.jpg" alt="">
+                                        <div class="interior1">
+                                            <span>Почувствуйте себя в салоне автомобиля ↓</span>
+                                            <a href="https://pano.autohome.com.cn/car/pano/60965#pvareaid=3454451"
+                                                target="_blank">
+                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="exterior">
+                    <div class="exterior">
+                        <div class="container">
+                            <div class="interior_items">
+                                <h2 class="interior_title">Экстерьер</h2>
+                                <div class="interior_background">
+
+                                    <div class="image_size">
+                                        <img src="images/exterior/SL03.jpg" alt="">
+                                        <div class="interior1">
+                                            <span>Оцените внешний вид автомобиля не выходя из дома ↓</span>
+                                            <a href="https://pano.autohome.com.cn/car/ext/60965?appversion="
+                                                target="_blank">
+                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="complection">
+                    <div class="complete">
+                        <div class="container">
+                            <h2 class="complete_title">Комплектация Deepal SL 03-131 plus REEV</h2>
+                            <div class="elementor-element elementor-element-c66cbd8 elementor-widget elementor-widget-html"
+                                data-id="c66cbd8" data-element_type="widget" data-widget_type="html.default">
+                                <div class="elementor-widget-container">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <td>Задний привод</td>
+                                                <td>Бесключевой доступ: полный автомобиль</td>
+                                                <td>NFC зарядка на 40 ВТ</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>190 кВт/258 л.с</td>
+                                                <td>Трехкомпонентная литиевая батарея</td>
+                                                <td>Адаптивный круиз-контроль</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,5 л атмосферный двигатель</td>
+                                                <td>Deepal OS 18/12 Gb</td>
+                                                <td>Передний/Задний, 360 камера, автопарковка</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Макс. скорость 180 км/ч</td>
+                                                <td>Bluetooth, 6 фирменных колонок</td>
+                                                <td>Источники дальнего и ближнего света - LED, центральная подсветка
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Разгон 0-100 км/ч, 7.2 сек</td>
+                                                <td>Размер центрального экрана(дюйм) - 14.6 поворачивающийся
+                                                </td>
+                                                <td>Климат-контроль - 2 зоны</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Емкость батареи, кВт-18.99</td>
+                                                <td>Размер основного экрана(дюйм) для водителя - 10.2</td>
+                                                <td>5 мест: 2+3, память сиденья, обдув и обогрев</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Запас хода на электродвигателе (CLTC) - 135км</td>
+                                                <td>Объем бака: 45 литров (92 и выше), расход на 100 - 4.4 - 6.8 литров
+                                                </td>
+                                                <td>Размер шин - 235/55 R19</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="download/sl03.pdf" download="sl03.pdf" class="download">Скачать файл
+                                комплектаций</a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+        <section>
+            <div class="news_block" id="news">
+                <div class="container">
+                    <h2 class="news_title">Новости</h2>
+                    <div class="news_title_items">
+                        <div class="news_title-item"></div>
+                        <p class="news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis totam,
+                            voluptate quibusdam vero impedit est beatae? Modi corrupti obcaecati molestias ad asperiores
+                            veniam minima tenetur alias enim repellendus maiores porro praesentium itaque mollitia
+                            numquam quia aliquid doloribus, ipsam et non quis nemo iste nostrum? Quibusdam quae eligendi
+                            harum minus repudiandae!</p>
+                    </div>
+                    <div class="news_title_items">
+                        <p class="news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis totam,
+                            voluptate quibusdam vero impedit est beatae? Modi corrupti obcaecati molestias ad asperiores
+                            veniam minima tenetur alias enim repellendus maiores porro praesentium itaque mollitia
+                            numquam quia aliquid doloribus, ipsam et non quis nemo iste nostrum? Quibusdam quae eligendi
+                            harum minus repudiandae!</p>
+                        <div class="news_title-item"></div>
+
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="news_block" id="promotion">
+                <div class="container">
+                    <h2 class="news_title">Акции</h2>
+                    <div class="news_title_items">
+                        <div class="news_title-item"></div>
+                        <div class="news_title-item"></div>
+                        <div class="news_title-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="battery_block-title">Преимущества</h2>
+            </div>
+        </section>
+        <section>
+            <div class="battery_block">
+                <div class="container">
+                    <div class="battery_text-block">
+                        <div class="battery_item">
+                            <h2 class="battery_title">Аккумуляторы Deepal</h2>
+                            <p class="battery_description">В автомобилях Deepal используются как литий-железо-фосфатные
+                                батареи, так и тройные
+                                литиевые батареи. Общая емкость аккумулятора составляет 79.97 киловатт-часов.
+                                Максимальная
+                                мощность системы составляет 190 киловатт. Максимальная дальность действия батареи CLTC
+                                составляет 200 км, максимальная дальность действия батареи WLTC — 160 км, а полная
+                                дальность
+                                действия CLTC — до 1120 км. Его можно зарядить с 35% до 80% всего за 35 минут.</p>
+                        </div>
+                        <div class="battery_info-add">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                    fill="#1C274C" />
+                                <path
+                                    d="M12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9L11.25 11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15L12.75 12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z"
+                                    fill="#1C274C" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="open_block">
+                <div class="container">
+                    <div class="battery_open-block">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae similique esse delectus
+                            dignissimos, incidunt distinctio laboriosam, ipsa nihil illo ratione omnis deleniti adipisci
+                            doloribus maxime. Iure voluptates fugiat delectus a tempore, quos facere magnam at
+                            architecto corrupti ipsum doloribus quaerat dolorum error veniam. Quia harum doloribus,
+                            suscipit inventore amet dolores vitae aperiam, reiciendis sequi placeat ea natus rerum a
+                            quas! Commodi quaerat facere a deleniti eius, culpa, quibusdam vel necessitatibus expedita,
+                            architecto ea suscipit laborum dolores optio asperiores iste dignissimos. Reiciendis
+                            inventore vel minima illo deleniti quaerat neque, sed laboriosam unde, iure minus sunt
+                            quibusdam at porro excepturi architecto molestias sit? Fugiat, iusto totam. Saepe
+                            accusantium molestiae accusamus temporibus laudantium dolores eum sit quo optio pariatur
+                            culpa sequi vel laboriosam magnam recusandae, dignissimos illum provident, fugiat dicta
+                            doloribus id beatae ipsam. Harum nulla, exercitationem, tempore iure commodi quibusdam
+                            pariatur deserunt minus id architecto hic tenetur, similique consequatur! Perferendis, dolor
+                            quam.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="bottom_menu">
+                <div class="container">
+                    <div class="bottom_menu-items">
+                        <a href="#pre_order" class="bottom_item-link">
+                            <span>Предзаказ</span>
+                        </a>
+                        <a href="#" class="bottom_item-link">
+                            <span>Дилеры</span>
+                        </a>
+                        <a href="#" class="bottom_item-link">
+                            <span>Тест-драйв</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footer_nav">
+            <div class="container">
+                <div class="footer_items">
+                    <div class="footer_logo">
+                        <a href="index.html">
+                            <!-- <img src="images/logo1.png" alt=""> -->
+                        </a>
+                    </div>
+                    <ul class="footer_links">
+                        <li class="footer_list footer_list-title">
+                            Пресс-центр
+                        </li>
+                        <li class="footer_list">
+                            <a href="#news" class="footer_link">Новости</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_links">
+                        <li class="footer_list footer_list-title">
+                            Сервис </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_link"> Записаться на сервис </a>
+                        </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_link"> Гарантия </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_links">
+                        <li class="footer_list footer_list-title">
+                            Покупателю </li>
+                        <li class="footer_list">
+                            <a href="#pre_order" class="footer_link"> Предзаказ </a>
+                        </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_link"> Где купить </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed-element">
+        <div class="fixed_head">
+            <span class="fixed_head-title"> Вам нужна помощь?</span>
+            <div class="fixed_element-bloc">
+                <div class="image_avatar">
+                    <!-- <img src="images/image_avatar.jpg" alt=""> -->
+                    <svg fill="#000000" height="50px" width="50px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M256,0C114.836,0,0,114.836,0,256c0,55.849,17.988,107.567,48.454,149.692c0.197,0.897,0.479,1.781,0.94,2.625
+			c0.945,1.719,2.332,3.026,3.937,3.897C100.187,472.863,173.601,512,256,512c141.163,0,256-114.837,256-256
+			C512,114.836,397.163,0,256,0z M256,492.308c-73.255,0-138.832-33.507-182.212-86.003c47.187-24.817,128.284-62.291,129.164-62.7
+			c2.423-1.115,4.289-3.173,5.163-5.683c0.885-2.519,0.712-5.279-0.481-7.663c-13.144-26.289-44.01-102.615-29.202-139.635
+			c0.289-0.721,0.491-1.481,0.606-2.26l9.606-67.231c3.702-6.663,14.154-21.327,26.029-22.587
+			c7.923-0.808,16.625,4.462,25.692,15.808c1.875,2.336,4.702,3.692,7.692,3.692c3.212,0,78.769,1.01,78.769,88.615
+			c0,1.058,0.173,2.106,0.51,3.115l9.846,29.538c0.077,0.24,7.625,24.048-17.317,49c-1.077,1.077-1.894,2.394-2.375,3.846
+			l-9.846,29.539c-1.183,3.538-0.259,7.442,2.375,10.077c2.389,2.399,57.406,56.853,124.505,78.882
+			C391.163,460.644,327.209,492.308,256,492.308z M328.308,321.99l7.144-21.452c31.423-32.904,20.885-66.029,20.404-67.452
+			l-9.346-28.048c-0.846-91.683-73.894-104.587-93.606-106.394c-12.712-14.538-26.241-21.163-40.308-19.683
+			c-25.587,2.712-40.635,31.423-42.269,34.683c-0.471,0.942-0.788,1.961-0.942,3.01l-9.683,67.808
+			c-16.635,44.202,14.115,119.308,25.99,145.452c-23.195,10.813-85.772,40.233-123.95,60.479
+			c-26.495-38.183-42.05-84.5-42.05-134.392c0-130.298,106.01-236.308,236.308-236.308S492.308,125.702,492.308,256
+			c0,51.517-16.584,99.228-44.676,138.101C392.462,378.32,342.937,335.498,328.308,321.99z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="fixed_element-info">
+                    <span>Имя</span>
+                    <span>Консультант</span>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="fixed_text">
+            Здравствуйте. Вас приветствует Шухрат, генеральный менеджер по продажам автосалона Deepal. Какой автомобиль
+            вы хотите
+            приобрести?
+        </h2>
+        <form action="">
+            <div class="input_checkbox-type">
+                <input type="checkbox" name="s7-hybrid" id="s7-hybrid">
+                <label for="s7-hybrid">S7 - последовательный гибрид</label>
+            </div>
+            <div class="input_checkbox-type">
+                <input type="checkbox" name="s7-electro" id="s7-electro">
+                <label for="s7-electro">S7 - Electro</label>
+            </div>
+            <div class="input_checkbox-type">
+                <input type="checkbox" name="sl-03-sedan" id="sl-03-sedan">
+                <label for="sl-03-sedan">SL-03 - Sedan</label>
+            </div>
+            <div class="input_checkbox-type">
+                <input type="checkbox" name="nevo-a07-hybrid" id="nevo-a07-hybrid">
+                <label for="sl-03-sedan">NEVO A07 - Sedan</label>
+            </div>
+            <div class="fixed_btns">
+                <button id="submitButton" class="fixed_btn">Отправить</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("cBzE-GD00vo0HMoG-"); // Здесь нужно указать ваш Public Key из EmailJS
+        })();
+    </script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="panorama_item">
+            <a href="pages/panorama.html" class="panorama_icon"><img src="images/360deg.gif" alt=""></a>
+        </div> -->
+
+<!-- <section>
+            <div class="news_block" id="map">
+                <div class="container">
+                    <h2 class="news_title">Наше местоположение на карте</h2>
+                    <div class="map_items">
+                        <div class="interactive_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1026.8125182905883!2d69.31810496895132!3d41.303971729377295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1726935586594!5m2!1sru!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <h2 class="panorama_title">Посмотрите наш магазин нажав на иконку ниже</h2>
+                    <div class="panorama_item">
+                        <a href="pages/panorama.html" class="panorama_icon"><img src="images/360deg.gif" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+<!-- <section>
+            <div class="contacts" id="contacts">
+                <div class="container">
+                    <h2 class="contacts_title">Наши контакты</h2>
+                    <div class="contact_items">
+                        <div class="left_contacts">
+                            <div class="tel_items">
+                                <span>Телефон: </span>
+                                <a href="tel:+998901234567" tel>+998901234567</a>
+                            </div>
+                            <div class="email_items">
+                                <span>Email: </span>
+                                <a href="mailto:test@yandex.ru">test@yandex.ru</a>
+                            </div>
+                        </div>
+                        <div class="social_media">
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/">
+                                    <img src="icons/icons8-instagram.gif" alt="Instagram">
+                                </a>
+                            </div>
+                            <div class="facebook">
+                                <a href="https://www.facebook.com/"><img src="icons/icons8-facebook.gif" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
