@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
@@ -20,11 +21,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand nevo_logo" href="index.html"><img src="images/nevo-logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
                     <div class="collapse navbar-collapse main_nav" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -48,10 +45,19 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="index.html" class="deepal_logo">
+                        AUTOMAN
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse nav_right" id="navbarSupportedContent">
 
                         <form class="d-flex" role="search">
-                            <button class="btn btn-outline-success" data-testdrive type="submit">Тест-драйв</button>
+                            <a href="test-drive.html" class="btn btn-outline-success" data-testdrive=""
+                                type="submit">Test-drive</a>
                         </form>
                     </div>
                 </div>
@@ -61,7 +67,7 @@
 
     <!-- main -->
     <main>
-        <section>
+        <section id="more-about">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide deepal_slide">
@@ -69,7 +75,8 @@
                         <div class="slide_bloc">
 
                             <span class="header_price">
-                                от 353 000 000 сум
+                                <span class="pretext">от</span> 348 000 000 <span class="currency"
+                                    data-currency>сум</span>
                             </span>
                             <a href="#section_bloc" data-model-about class="swiper_btn nevo_btn">Подробнее</a>
                         </div>
@@ -85,30 +92,26 @@
                         <div class="container">
                             <ul class="main_list">
                                 <li class="main_list-item">
-                                    <a href="#style" class="main_list-item-link">
+                                    <a href="#style" class="main_list-item-link" data-model-configuration>
                                         Конфигурация
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#interior" class="main_list-item-link">
+                                    <a href="#interior" class="main_list-item-link" data-model-interior>
                                         Интерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#exterior" class="main_list-item-link">
+                                    <a href="#exterior" class="main_list-item-link" data-model-exterior>
                                         Экстерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#complection" class="main_list-item-link">
+                                    <a href="#complection" class="main_list-item-link" data-model-complection>
                                         Комплектации
                                     </a>
                                 </li>
-                                <li class="main_list-item">
-                                    <a href="#tech" class="main_list-item-link">
-                                        Технические характеристики
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -116,25 +119,25 @@
                 <section>
                     <div class="main_style" id="style">
                         <div class="container">
-                            <div class="main_style-wrapper">
-                                <h2 class="main_style-title">Выбери свой стиль</h2>
-                                <div class="main_style-background" id="style2">
-                                    <img class="style2_bg" src="images/sl03_mini-slide/sl03-1.png" alt="Car Image">
+                            <div class="main_style-wrapper" id="style3">
+                                <h2 class="main_style-title" data-model-titleStyle>Выбери свой стиль</h2>
+                                <div class="main_style-background" id="style3">
+                                    <img class="style3_bg" src="images/sl03_mini-slide/sl03-1.webp" alt="Car Image">
                                 </div>
 
                                 <div class="images">
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-1.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-1.webp"
                                         style="background-color: #091D37;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-2.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-2.webp"
                                         style="background-color: #506D6F;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-3.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-3.webp"
                                         style="background-color: #3E4247;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-4.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-4.webp"
                                         style="background-color: #E6E8EA;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-5.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-5.webp"
                                         style="background-color: #1C1F22;"></div>
                                 </div>
-                                <a href="#" class="style_pre-btn">Предзаказ</a>
+                                <a href="#" class="style_pre-btn" data-model-preBtn>Предзаказ</a>
                             </div>
 
 
@@ -147,59 +150,69 @@
                             <div class="pre_order-form">
                                 <div class="preOrder-section">
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Автомобиль</h6>
+                                        <h6 class="preOrder-section-title" data-model-preTitle>Автомобиль</h6>
                                     </div>
                                     <div class="block_inputs">
                                         <div class="input seelct_input ">
                                             <form class="form_input">
-                                                <label for="model-select">Комплектация</label>
-                                                <select name="model" id="model-select">
-                                                    <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
-                                                    <option value="s7-hybrid">Nevo A07 Hybrid</option>
-                                                    <option value="s7-electro">Nevo A07 Electro</option>
+                                                <label for="model-select-3" class="data-model-preComplection"
+                                                    data-model-preComplection>Комплектация</label>
+                                                <select name="model" id="model-select-3">
+                                                    <option value="" class="data-model-choose-complection"
+                                                        data-model-choose-complection>--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                    <option value="Nevo-a07-hybrid">Nevo A07 Hybrid</option>
+                                                    <option value="Nevo-a07-electro">Nevo A07 Electro</option>
                                                 </select>
                                             </form>
                                         </div>
                                         <div class="input  seelct_input">
                                             <form class="form_input">
-                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
-                                                <select name="diler" id="diler-select">
-                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
-                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
-                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                <label for="diler-select-3" class="diler_select" data-model-diler>ВЫБОР
+                                                    ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select-3">
+                                                    <option value="" class="diler_select" data-model-diler>--ВЫБЕРИТЕ
+                                                        ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler" class="tashkent-diler"
+                                                        data-model-tashkent>ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler" class="kibrai-diler" data-model-kibrai>
+                                                        КИБРАЙ</option>
                                                 </select>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                        <h6 class="preOrder-section-title" data-model-preOrder-section-title>Ваши данные
+                                        </h6>
                                     </div>
                                     <div class="input2 js-input">
                                         <div class="form-radio js-radio-group" data-name="legal_entity">
-                                            <a href="#" class="radio js-radio" data-value="2">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="individual" id="individual">
-                                                <span class="radio-label">Физическое лицо</span>
-                                            </a>
-                                            <a href="#" class="radio js-radio" data-value="1">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="legal" id="legal">
-                                                <span class="radio-label">Юридическое лицо</span>
-                                            </a>
+                                            <div class="radio js-radio" data-value="2">
+                                                <input type="radio" class="custom-radio" name="entity_type_3"
+                                                    id="individual-3" value="2">
+                                                <label class="radio-label" data-model-invidual
+                                                    for="individual-3">Физическое лицо</label>
+                                            </div>
+                                            <div class="radio js-radio" data-value="1">
+                                                <input type="radio" class="custom-radio" name="entity_type_3"
+                                                    id="legal-3" value="1">
+                                                <label class="radio-label" data-model-legal for="legal-3">Юридическое
+                                                    лицо</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="group_inputs">
                                         <div class="input js-input input_fields ">
-                                            <div class="input-label">Имя</div>
-                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                            <div class="input-label" data-name>Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name-3">
                                         </div>
                                         <div class="input js-input  input_fields">
-                                            <div class="input-label">Телефон</div>
-                                            <input type="tel" name="name" class="input-field" id="crm-phone">
+                                            <div class="input-label" data-phone>Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone-3">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form_btn" onclick="sendForm()">Отправить</button>
+                                <button class="form_btn" id="submitButton3" data-send
+                                    onclick="sendForm(3, 'style3')">Отправить</button>
                             </div>
                         </div>
                     </div>
@@ -208,15 +221,15 @@
                     <div class="interior">
                         <div class="container">
                             <div class="interior_items">
-                                <h2 class="interior_title">Интерьер</h2>
+                                <h2 class="interior_title" data-model-interior>Интерьер</h2>
                                 <div class="interior_background">
                                     <div class="image_size">
                                         <img src="images/interior/NEVO-A07-Details-13.webp" alt="">
                                         <div class="interior1">
-                                            <span>Почувствуйте себя в салоне автомобиля ↓</span>
+                                            <span data-model-inside>Почувствуйте себя в салоне автомобиля ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/pano/70114?appversion="
                                                 target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -228,16 +241,17 @@
                     <div class="exterior">
                         <div class="container">
                             <div class="interior_items">
-                                <h2 class="interior_title">Экстерьер</h2>
+                                <h2 class="interior_title" data-model-exterior>Экстерьер</h2>
                                 <div class="interior_background">
 
                                     <div class="image_size">
                                         <img src="images/exterior/1200x900.webp" alt="">
                                         <div class="interior1">
-                                            <span>Оцените внешний вид автомобиля не выходя из дома ↓</span>
+                                            <span data-model-outside>Оцените внешний вид автомобиля не выходя из дома
+                                                ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/ext/70118?appversion="
                                                 target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +262,7 @@
                 <section id="complection">
                     <div class="complete">
                         <div class="container">
-                            <h2 class="complete_title">Комплектации</h2>
+                            <h2 class="complete_title" data-model-complection>Комплектации</h2>
                             <div class="elementor-element elementor-element-c66cbd8 elementor-widget elementor-widget-html"
                                 data-id="c66cbd8" data-element_type="widget" data-widget_type="html.default">
                                 <div class="elementor-widget-container">
@@ -351,7 +365,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <a href="path_to_file/file_name.txt" download class="download">Скачать файл комплектаций</a>
+                            <a href="path_to_file/file_name.txt" download class="download" data-model-download>Скачать
+                                файл комплектаций</a>
                         </div>
                     </div>
 
@@ -362,7 +377,7 @@
         <section>
             <div class="news_block" id="news">
                 <div class="container">
-                    <h2 class="news_title">Новости</h2>
+                    <h2 class="news_title" data-news>Новости</h2>
                     <div class="news_title_items">
                         <div class="news_title-item"></div>
                         <p class="news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis totam,
@@ -385,7 +400,7 @@
         <section>
             <div class="news_block" id="promotion">
                 <div class="container">
-                    <h2 class="news_title">Акции</h2>
+                    <h2 class="news_title" data-promotions>Акции</h2>
                     <div class="news_title_items">
                         <div class="news_title-item"></div>
                         <div class="news_title-item"></div>
@@ -396,7 +411,7 @@
         </section>
         <section>
             <div class="container">
-                <h2 class="battery_block-title">Преимущества</h2>
+                <h2 class="battery_block-title" data-advantages>Преимущества</h2>
             </div>
         </section>
         <section>
@@ -457,14 +472,14 @@
             <div class="bottom_menu">
                 <div class="container">
                     <div class="bottom_menu-items">
-                        <a href="#pre_order" class="bottom_item-link">
-                            <span>Предзаказ</span>
+                        <a href="#more-about" class="bottom_item-link">
+                            <span data-preorder>Предзаказ</span>
                         </a>
-                        <a href="#" class="bottom_item-link">
-                            <span>Дилеры</span>
+                        <a href="contacts.html" class="bottom_item-link">
+                            <span data-dilers>Дилеры</span>
                         </a>
-                        <a href="#" class="bottom_item-link">
-                            <span>Тест-драйв</span>
+                        <a href="test-drive.html" class="bottom_item-link">
+                            <span data-test-drive>Тест-драйв</span>
                         </a>
                     </div>
                 </div>
@@ -476,37 +491,33 @@
         <div class="footer_nav">
             <div class="container">
                 <div class="footer_items">
-                    <div class="footer_logo">
+                    <!-- <div class="footer_logo">
                         <a href="index.html">
-                            <!-- <img src="images/logo1.png" alt=""> -->
                         </a>
-                    </div>
+                    </div> -->
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-pressCenter>
                             Пресс-центр
                         </li>
                         <li class="footer_list">
-                            <a href="#news" class="footer_link">Новости</a>
+                            <a href="#news" class="footer_link" data-news>Новости</a>
                         </li>
                     </ul>
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-service>
                             Сервис </li>
                         <li class="footer_list">
-                            <a href="" class="footer_link"> Записаться на сервис </a>
-                        </li>
-                        <li class="footer_list">
-                            <a href="" class="footer_link"> Гарантия </a>
+                            <a href="" class="footer_link" data-book-service> Записаться на сервис </a>
                         </li>
                     </ul>
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-buyer>
                             Покупателю </li>
                         <li class="footer_list">
-                            <a href="#pre_order" class="footer_link"> Предзаказ </a>
+                            <a href="#more-about" class="footer_link" data-preorder> Предзаказ </a>
                         </li>
                         <li class="footer_list">
-                            <a href="" class="footer_link"> Где купить </a>
+                            <a href="contacts.html" class="footer_link" data-whereBuy> Где купить </a>
                         </li>
                     </ul>
 

@@ -10,6 +10,75 @@
     color: #161718;
 }
 
+.mobile_menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobile_menu.active {
+    position: fixed;
+    z-index: 9999;
+    right: 12px;
+    top: 26px;
+}
+
+.mobile_menu.active .mobile_line {
+    background: #161718;
+}
+
+.mobile_menu.active::after,
+.mobile_menu.active::before {
+    background: #161718;
+}
+
+.mobile_line {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: 0.5s
+}
+
+.mobile_menu::before {
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    transition: 0.5s
+}
+
+.mobile_menu::after {
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    transition: 0.5s
+}
+
+.mobile_menu.active .mobile_line {
+    width: 0;
+}
+
+.mobile_menu.active::after {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.mobile_menu.active::before {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
 .container {
     max-width: 1370px;
     width: 100%;
@@ -28,7 +97,7 @@
 }
 
 .nevo_logo {
-    width: 80px;
+    width: 90px !important;
 }
 
 .nevo_logo img {
@@ -95,6 +164,12 @@
     color: #ffffff;
 }
 
+.deepal_logo {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: #0b457f;
+}
+
 .video-container {
     position: fixed;
     top: 0;
@@ -141,7 +216,7 @@ video {
     z-index: 3;
     left: 0;
     top: 12.6%;
-    width: 50%;
+    width: 55%;
     height: 100%;
 }
 
@@ -177,9 +252,9 @@ video {
     padding: 80px;
     line-height: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 80px;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -245,8 +320,12 @@ video {
     justify-content: flex-end;
 }
 
-.navbar-brand img {
+.navbar-brand {
     width: 200px;
+}
+
+.navbar-brand img {
+    width: 100%;
 }
 
 .main_nav {
@@ -279,6 +358,7 @@ video {
     justify-content: center;
     align-items: center;
     width: 23%;
+    text-align: center;
 }
 
 .navbar-nav .nav-link.active,
@@ -290,6 +370,11 @@ video {
     font-weight: 400;
     margin-right: 20px;
     line-height: 36px;
+}
+
+
+.navbar-nav .nav-link.show {
+    color: #FFFFFF;
 }
 
 .service_toggle {
@@ -381,6 +466,7 @@ video {
     border: none;
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
 
 
@@ -534,6 +620,7 @@ video {
 .swiper,
 .s07_swiper {
     width: 100%;
+    border: none;
     /* Ширина слайдера будет 100% от ширины экрана */
     /* height: calc(var(--vh, 1vh) * 100 - 80px); */
     /* height: 850px; */
@@ -541,6 +628,7 @@ video {
 
 .swiper-slide {
     position: relative;
+
 }
 
 .swiper-slide img {
@@ -572,10 +660,14 @@ video {
 }
 
 .header_price {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 24px;
     font-family: 'ScodaNext';
     font-weight: 700;
+}
+
+.currency {
+    font-size: medium;
 }
 
 .mySwiper_price {
@@ -769,6 +861,7 @@ video {
     bottom: -40px;
     cursor: pointer;
     z-index: 999;
+    transform: translateX(-50%);
 }
 
 .battery_info-add::after {
@@ -897,6 +990,8 @@ video {
     justify-content: space-between;
     align-items: start;
     margin-top: 15px;
+    flex-wrap: wrap;
+    column-gap: 15px;
 }
 
 .news_block {
@@ -916,6 +1011,7 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .bottom_item-link {
@@ -1015,10 +1111,47 @@ video {
     font-family: 'ScodaNext';
 }
 
+/* Скрываем стандартный input */
+.custom-radio {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Контейнер для радио-кнопки и её метки */
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Создаем кастомный круг для радио-кнопки */
+.radio-label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    /* Размер кастомного радиобаттона */
+    height: 20px;
+    border-radius: 50%;
+    /* Делаем круг */
+    border: 2px solid #da2128;
+    /* Цвет рамки */
+    margin-right: 8px;
+    /* Отступ от метки */
+    box-sizing: border-box;
+}
+
+/* Стиль для активного состояния */
+.custom-radio:checked+.radio-label::before {
+    background-color: #da2128;
+    /* Цвет активной кнопки */
+    box-shadow: inset 0 0 0 4px white;
+    /* Создаем белый кружок внутри */
+}
+
 .input_checkbox-type label {
     text-transform: uppercase;
     font-family: 'ScodaNext';
 }
+
 
 .image_avatar {
     background: #c4c0c0;
@@ -1110,9 +1243,9 @@ video {
     letter-spacing: 3px;
 }
 
-.model_price span {
-    text-transform: lowercase;
-}
+
+
+
 
 .main_item.active {
     position: fixed;
@@ -1208,9 +1341,9 @@ video {
 
 .footer_items {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
-    column-gap: 55px;
+    /* column-gap: 55px; */
 }
 
 .footer_list {
@@ -1254,6 +1387,9 @@ video {
     align-items: center;
     padding: 20px 0;
     margin-bottom: 0;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
 }
 
 .main_list-item-link {
@@ -1368,12 +1504,13 @@ video {
     color: #161718;
 }
 
-.interior_background {
+.interior_background,
+.exterior_background {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    row-gap: 15px;
+    /* row-gap: 15px; */
     border-radius: 16px;
     overflow: auto;
     box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 22%);
@@ -1387,8 +1524,9 @@ video {
 
 }
 
-.image_size img {
-    height: 100%;
+.degrees_icon svg {
+    width: 50px;
+    height: 50px;
 }
 
 .interior1 {
@@ -1431,7 +1569,8 @@ video {
     height: 100%;
 } */
 
-.interior_background img {
+.interior_background img,
+.exterior_background img {
     width: 50%;
     height: 100%;
     object-fit: cover;
@@ -1653,7 +1792,6 @@ video {
     color: #323232;
     font-family: Montserrat-SemiBold, sans-serif;
     line-height: 17px;
-    margin-left: 12px;
 }
 
 .preOrder-section-head {
@@ -1703,8 +1841,12 @@ textarea {
     width: 100%;
 }
 
-.service_form:nth-of-type(2) {
+.service_form {
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 60px;
 }
 
 .group_inputs {
@@ -1729,6 +1871,10 @@ textarea {
 .textarea_input form {
     width: 100%;
     margin-bottom: 50px;
+}
+
+.service_textarea {
+    width: 50%;
 }
 
 .textarea_input form textarea {
@@ -1809,26 +1955,32 @@ select {
 .test_drive-block {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     column-gap: 50px;
 }
 
-.test_drive-left {
-    width: 50%;
-}
-
+.test_drive-left,
 .test_drive-right {
     width: 50%;
+    flex-grow: 1;
 }
+
+/* .test_drive-right {
+    width: 50%;
+} */
 
 .test_drive-left img {
     width: 100%;
+    height: 100%;
+    /* Изображение займет всю высоту контейнера */
+    object-fit: cover;
 }
 
 .test_drive-right .pre_order-form {
     padding-top: 0;
 }
-tbody tr td{
+
+tbody tr td {
     text-align: center;
     font-family: 'ScodaNext';
     font-size: 14px;

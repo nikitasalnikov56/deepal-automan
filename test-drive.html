@@ -11,19 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header_block">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary contacts_nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
                     <div class="collapse navbar-collapse main_nav" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -40,16 +37,26 @@
                                     Сервис
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" data-book-service href="service-request.html">Записаться на сервис</a>
+                                    <li><a class="dropdown-item" data-book-service
+                                            href="service-request.html">Записаться на сервис</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
+                    <a href="index.html" class="deepal_logo">
+                        AUTOMAN
+                    </a>
+                    <button class="navbar-toggler contact_toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon contact_icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse nav_right" id="navbarSupportedContent">
 
                         <form class="d-flex" role="search">
-                            <button class="btn btn-outline-success" data-testdrive type="submit">Тест-драйв</button>
+                            <a href="test-drive.html" class="btn btn-outline-success" data-testdrive=""
+                                type="submit">Test-drive</a>
                         </form>
                     </div>
                 </div>
@@ -63,70 +70,115 @@
                 <div class="container">
                     <div class="test_drive-block">
                         <div class="test_drive-left">
-                            <img src="images/deepal_slide/s7.jpg" alt="">
+                            <!-- <img src="images/deepal_slide/s7.jpg" alt=""> -->
+                            <div class="swiper test_drive-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="images/deepal_slide/s7.webp" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="images/deepal_slide/SL03.webp" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="images/nevo_a07-dropdown.jpg" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="test_drive-right">
-
                             <div class="pre_order-form">
                                 <div class="preOrder-section">
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Автомобиль</h6>
-                                    </div>
-                                    <div class="input select_input ">
-
-                                        <form class="form_input">
-                                            <label for="model-select">Комплектация</label>
-
-                                            <select name="model" id="model-select">
-                                                <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
-                                                <option value="s7-hybrid">Deepal S7 Hybrid</option>
-                                                <option value="s7-electro">Deepal S7 Electro</option>
-                                                <option value="s7-electro">Deepal SL03 Hybrid</option>
-                                                <option value="s7-electro">Deepal SL03 Electro</option>
-                                            </select>
-                                        </form>
+                                        <h6 class="preOrder-section-title" data-model-preTitle>Автомобиль</h6>
                                     </div>
                                     <div class="block_inputs">
+                                        <div class="input seelct_input ">
+                                            <form class="form_input">
+                                                <label for="model-select-3" class="data-model-preComplection"
+                                                    data-model-preComplection>Комплектация</label>
+                                                <select name="model" id="model-select-3">
+                                                    <option value="" class="data-model-choose-complection"
+                                                        data-model-choose-complection>--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                    <option value="s7-hybrid">Deepal S7 Hybrid</option>
+                                                    <option value="s7-electro">Deepal S7 Electro</option>
+                                                    <option value="s7-electro">Deepal SL03 Hybrid</option>
+                                                    <option value="s7-electro">Deepal SL03 Electro</option>
+                                                    <option value="Nevo-a07-hybrid">Nevo A07 Hybrid</option>
+                                                    <option value="Nevo-a07-electro">Nevo A07 Electro</option>
+                                                </select>
+                                            </form>
+                                        </div>
                                         <div class="input  seelct_input">
                                             <form class="form_input">
-                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
-                                                <select name="diler" id="diler-select">
-                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
-                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
-                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                <label for="diler-select-3" class="diler_select" data-model-diler>ВЫБОР
+                                                    ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select-3">
+                                                    <option value="" class="diler_select" data-model-diler>--ВЫБЕРИТЕ
+                                                        ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler" class="tashkent-diler"
+                                                        data-model-tashkent>ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler" class="kibrai-diler" data-model-kibrai>
+                                                        КИБРАЙ</option>
                                                 </select>
                                             </form>
                                         </div>
                                     </div>
+                                    <!-- Новый блок для выбора даты и времени -->
+                                    <div class="block_inputs">
+                                        <div class="input select_input">
+                                            <form class="form_input">
+                                                <label for="test-drive-date" class="data-test-drive-date"
+                                                    data-test-drive-date>Дата тест-драйва</label>
+                                                <input type="date" id="test-drive-date" name="test-drive-date"
+                                                    class="input-field">
+                                            </form>
+                                        </div>
+                                        <div class="input select_input">
+                                            <form class="form_input">
+                                                <label for="test-drive-time" class="data-test-drive-time"
+                                                    data-test-drive-time>Время тест-драйва</label>
+                                                <input type="time" id="test-drive-time" name="test-drive-time"
+                                                    class="input-field">
+                                            </form>
+                                        </div>
+                                    </div>
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                        <h6 class="preOrder-section-title" data-model-preOrder-section-title>Ваши данные
+                                        </h6>
                                     </div>
                                     <div class="input2 js-input">
                                         <div class="form-radio js-radio-group" data-name="legal_entity">
-                                            <a href="#" class="radio js-radio" data-value="2">
-                                                <span class="radio-input"></span>
-                                                <span class="radio-label">Физическое лицо</span>
-                                            </a>
-                                            <a href="#" class="radio js-radio" data-value="1">
-                                                <span class="radio-input"></span>
-                                                <span class="radio-label">Юридическое лицо</span>
-                                            </a>
+                                            <div class="radio js-radio" data-value="2">
+                                                <input type="radio" class="custom-radio" name="entity_type_3"
+                                                    id="individual-3" value="2">
+                                                <label class="radio-label" data-model-invidual
+                                                    for="individual-3">Физическое лицо</label>
+                                            </div>
+                                            <div class="radio js-radio" data-value="1">
+                                                <input type="radio" class="custom-radio" name="entity_type_3"
+                                                    id="legal-3" value="1">
+                                                <label class="radio-label" data-model-legal for="legal-3">Юридическое
+                                                    лицо</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="group_inputs">
                                         <div class="input js-input input_fields ">
-                                            <div class="input-label">Имя</div>
-                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                            <div class="input-label" data-name>Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name-3">
                                         </div>
                                         <div class="input js-input  input_fields">
-                                            <div class="input-label">Телефон</div>
-                                            <input type="tel" name="name" class="input-field" id="crm-name">
+                                            <div class="input-label" data-phone>Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone-3">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form_btn">Отправить</button>
+                                <button class="form_btn" id="submitButton3" data-send
+                                    onclick="sendNewForm(3)">Отправить</button>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -143,6 +195,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script src="script/main.js"></script>
+    <script src="script/test_drive.js"></script>
 </body>
 
 </html>

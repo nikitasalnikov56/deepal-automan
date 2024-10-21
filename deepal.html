@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
@@ -20,11 +21,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
                     <div class="collapse navbar-collapse main_nav" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -48,6 +45,14 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="index.html" class="deepal_logo">
+                        AUTOMAN
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse nav_right" id="navbarSupportedContent">
 
                         <form class="d-flex" role="search">
@@ -62,28 +67,31 @@
 
     <!-- main -->
     <main>
-        <section>
+        <section id="more-about">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide deepal_slide">
-                        <img src="images/deepal_slide/s7.jpg" alt="">
+                        <img src="images/deepal_slide/s7.webp" alt="">
                         <div class="slide_bloc">
                             <a href="#section_bloc" data-model-about class="swiper_btn s7_btn">Подробнее</a>
-                            <div class="model_price"><span>от</span> 353 000 000 сум</div>
+                            <div class="model_price"> <span class="pretext">от</span> 329 000 000 <span class="currency"
+                                    data-currency>сум</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide deepal_slide">
-                        <img src="images/deepal_slide/SL03.jpg" alt="">
+                        <img src="images/deepal_slide/SL03.webp" alt="">
                         <div class="slide_bloc">
 
                             <a href="#section_bloc" data-model-about class="swiper_btn sl03_btn">Подробнее</a>
-                            <div class="model_price"><span>от</span> 325 000 000 сум</div>
+                            <div class="model_price"> <span class="pretext">от</span> 331 000 000 <span class="currency"
+                                    data-currency>сум</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section id="section_bloc"></section>
         </section>
+        <section id="section_bloc"></section>
+
         <!-- смена секций в зависимости от модели авто -->
         <section class="section_bloc">
             <div class="s7_bloc">
@@ -92,22 +100,22 @@
                         <div class="container">
                             <ul class="main_list">
                                 <li class="main_list-item">
-                                    <a href="#style" class="main_list-item-link">
+                                    <a href="#style" class="main_list-item-link" data-model-configuration>
                                         Конфигурация
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#interior" class="main_list-item-link">
+                                    <a href="#interior" class="main_list-item-link" data-model-interior>
                                         Интерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#exterior" class="main_list-item-link">
+                                    <a href="#exterior" class="main_list-item-link" data-model-exterior>
                                         Экстерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#complection" class="main_list-item-link">
+                                    <a href="#complection" class="main_list-item-link" data-model-complection>
                                         Комплектации
                                     </a>
                                 </li>
@@ -118,27 +126,27 @@
                 <section>
                     <div class="main_style" id="style">
                         <div class="container">
-                            <div class="main_style-wrapper">
-                                <h2 class="main_style-title">Выбери свой стиль</h2>
+                            <div class="main_style-wrapper" id="style1">
+                                <h2 class="main_style-title" data-model-titleStyle>Выбери свой стиль</h2>
                                 <div class="main_style-background" id="style1">
-                                    <img class="style1_bg" src="images/s7_mini-slide/deepal1.png" alt="Car Image">
+                                    <img class="style1_bg" src="images/s7_mini-slide/deepal1.webp" alt="Car Image">
                                 </div>
 
                                 <div class="images">
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal1.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal1.webp"
                                         style="background-color: #ffffff;"></div>
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal2.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal2.webp"
                                         style="background-color: #A7BBBE;"></div>
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal3.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal3.webp"
                                         style="background-color: #1F2632;"></div>
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal4.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal4.webp"
                                         style="background-color: #485059;"></div>
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal5.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal5.webp"
                                         style="background-color: #B8C86E;"></div>
-                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal6.png"
+                                    <div class="color-circle" data-img="images/s7_mini-slide/deepal6.webp"
                                         style="background-color: #CD7161;"></div>
                                 </div>
-                                <a href="#" class="style_pre-btn">Предзаказ</a>
+                                <a href="#" class="style_pre-btn" data-model-preBtn>Предзаказ</a>
                             </div>
 
 
@@ -151,14 +159,16 @@
                             <div class="pre_order-form">
                                 <div class="preOrder-section">
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Автомобиль</h6>
+                                        <h6 class="preOrder-section-title" data-model-preTitle>Автомобиль</h6>
                                     </div>
                                     <div class="block_inputs">
                                         <div class="input seelct_input ">
                                             <form class="form_input">
-                                                <label for="model-select">Комплектация</label>
-                                                <select name="model" id="model-select">
-                                                    <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                <label for="model-select-1" class="data-model-preComplection"
+                                                    data-model-preComplection>Комплектация</label>
+                                                <select name="model" id="model-select-1">
+                                                    <option value="" class="data-model-choose-complection"
+                                                        data-model-choose-complection>--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
                                                     <option value="s7-hybrid">Deepal S7 Hybrid</option>
                                                     <option value="s7-electro">Deepal S7 Electro</option>
                                                 </select>
@@ -166,44 +176,50 @@
                                         </div>
                                         <div class="input  seelct_input">
                                             <form class="form_input">
-                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
-                                                <select name="diler" id="diler-select">
-                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
-                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
-                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                <label for="diler-select-1" class="diler_select" data-model-diler>ВЫБОР
+                                                    ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select-1">
+                                                    <option value="" class="diler_select" data-model-diler>--ВЫБЕРИТЕ
+                                                        ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler" class="tashkent-diler"
+                                                        data-model-tashkent>ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler" class="kibrai-diler" data-model-kibrai>
+                                                        КИБРАЙ</option>
                                                 </select>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                        <h6 class="preOrder-section-title" data-model-preOrder-section-title>Ваши данные
+                                        </h6>
                                     </div>
                                     <div class="input2 js-input">
                                         <div class="form-radio js-radio-group" data-name="legal_entity">
-                                            <a href="#" class="radio js-radio" data-value="2">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="individual" id="individual">
-                                                <span class="radio-label">Физическое лицо</span>
-                                            </a>
-                                            <a href="#" class="radio js-radio" data-value="1">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="legal" id="legal">
+                                            <div class="radio js-radio" data-value="2">
+                                                <input type="radio" class="custom-radio" name="entity_type_1"
+                                                    id="individual-1" value="2">
+                                                <label class="radio-label" for="individual-1">Физическое лицо</label>
+                                            </div>
+                                            <div class="radio js-radio" data-value="1">
+                                                <input type="radio" class="custom-radio" name="entity_type_1"
+                                                    id="legal-1" value="1">
                                                 <span class="radio-label">Юридическое лицо</span>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="group_inputs">
                                         <div class="input js-input input_fields ">
-                                            <div class="input-label">Имя</div>
-                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                            <div class="input-label" data-name>Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name-1">
                                         </div>
                                         <div class="input js-input  input_fields">
-                                            <div class="input-label">Телефон</div>
-                                            <input type="tel" name="name" class="input-field" id="crm-phone">
+                                            <div class="input-label" data-phone>Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone-1">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form_btn" onclick="sendForm()">Отправить</button>
+                                <button class="form_btn" id="submitButton1" data-send
+                                    onclick="sendForm(1, 'style1')">Отправить</button>
                             </div>
                         </div>
                     </div>
@@ -213,16 +229,15 @@
                     <div class="interior">
                         <div class="container">
                             <div class="interior_items">
-                                <h2 class="interior_title">Интерьер</h2>
+                                <h2 class="interior_title" data-model-interior>Интерьер</h2>
                                 <div class="interior_background">
                                     <div class="image_size">
-                                        <img src="images/interior/s7-interior.jpg" alt="">
+                                        <img src="images/interior/s7-interior.webp" alt="">
                                         <div class="interior1">
                                             <span>Почувствуйте себя в салоне автомобиля ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/pano/60965#pvareaid=3454451"
-                                                target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"></a>
-
+                                                target="_blank" class="degrees_icon">
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"></a>
                                         </div>
 
                                     </div>
@@ -236,16 +251,16 @@
                 <section id="exterior">
                     <div class="exterior">
                         <div class="container">
-                            <div class="interior_items">
-                                <h2 class="interior_title">Экстерьер</h2>
-                                <div class="interior_background">
+                            <div class="exterior_items">
+                                <h2 class="interior_title" data-model-exterior>Экстерьер</h2>
+                                <div class="exterior_background">
                                     <div class="image_size">
-                                        <img src="images/exterior/s7.jpg" alt="">
+                                        <img src="images/exterior/s7_1.webp" alt="">
                                         <div class="interior1">
                                             <span>Оцените внешний вид автомобиля не выходя из дома ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/ext/60965?appversion="
-                                                target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"></a>
+                                                target="_blank" class="degrees_icon">
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -256,7 +271,7 @@
                 <section id="complection">
                     <div class="complete">
                         <div class="container">
-                            <h2 class="complete_title">Комплектации</h2>
+                            <h2 class="complete_title" data-model-complection>Комплектации</h2>
                             <div class="elementor-element elementor-element-c66cbd8 elementor-widget elementor-widget-html"
                                 data-id="c66cbd8" data-element_type="widget" data-widget_type="html.default">
                                 <div class="elementor-widget-container">
@@ -294,7 +309,7 @@
                                                 <td>190 кВт/258 л.с</td>
                                                 <td>160 кВт/217 л.с</td>
                                             </tr>
-                                           
+
                                             <tr>
                                                 <td>Head Up - проекция на лобовое стекло</Head>
                                                 </td>
@@ -409,7 +424,7 @@
                                                 <td>Доп функции</td>
                                                 <td>Напоминание об усталости водителя</td>
                                                 <td>Экстренное торможение AEB-C/I (распознование автомобиля).<br>
-                                                Автоматическое закрытие окон во время дождя
+                                                    Автоматическое закрытие окон во время дождя
                                                 </td>
                                                 <td>FACE ID</td>
                                             </tr>
@@ -417,7 +432,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <a href="download/S7.pdf" download class="download">Скачать файл комплектаций</a>
+                            <a href="download/S7.pdf" download class="download" data-model-download>Скачать файл
+                                комплектаций</a>
                         </div>
                     </div>
 
@@ -429,28 +445,23 @@
                         <div class="container">
                             <ul class="main_list">
                                 <li class="main_list-item">
-                                    <a href="#style" class="main_list-item-link">
+                                    <a href="#style" class="main_list-item-link" data-model-configuration>
                                         Конфигурация
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#interior" class="main_list-item-link">
+                                    <a href="#interior" class="main_list-item-link" data-model-interior>
                                         Интерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#exterior" class="main_list-item-link">
+                                    <a href="#exterior" class="main_list-item-link" data-model-exterior>
                                         Экстерьер
                                     </a>
                                 </li>
                                 <li class="main_list-item">
-                                    <a href="#complection" class="main_list-item-link">
+                                    <a href="#complection" class="main_list-item-link" data-model-complection>
                                         Комплектации
-                                    </a>
-                                </li>
-                                <li class="main_list-item">
-                                    <a href="#tech" class="main_list-item-link">
-                                        Технические характеристики
                                     </a>
                                 </li>
                             </ul>
@@ -460,25 +471,25 @@
                 <section>
                     <div class="main_style" id="style">
                         <div class="container">
-                            <div class="main_style-wrapper">
-                                <h2 class="main_style-title">Выбери свой стиль</h2>
+                            <div class="main_style-wrapper" id="style2">
+                                <h2 class="main_style-title" data-model-titleStyle>Выбери свой стиль</h2>
                                 <div class="main_style-background" id="style2">
-                                    <img class="style2_bg" src="images/sl03_mini-slide/sl03-1.png" alt="Car Image">
+                                    <img class="style2_bg" src="images/sl03_mini-slide/sl03-1.webp" alt="Car Image">
                                 </div>
 
                                 <div class="images">
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-1.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-1.webp"
                                         style="background-color: #091D37;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-2.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-2.webp"
                                         style="background-color: #506D6F;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-3.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-3.webp"
                                         style="background-color: #3E4247;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-4.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-4.webp"
                                         style="background-color: #E6E8EA;"></div>
-                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-5.png"
+                                    <div class="color-circle1" data-src="images/sl03_mini-slide/sl03-5.webp"
                                         style="background-color: #1C1F22;"></div>
                                 </div>
-                                <a href="#" class="style_pre-btn">Предзаказ</a>
+                                <a href="#" class="style_pre-btn" data-model-preBtn>Предзаказ</a>
                             </div>
 
 
@@ -491,59 +502,69 @@
                             <div class="pre_order-form">
                                 <div class="preOrder-section">
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Автомобиль</h6>
+                                        <h6 class="preOrder-section-title" data-model-preTitle>Автомобиль</h6>
                                     </div>
                                     <div class="block_inputs">
                                         <div class="input seelct_input ">
                                             <form class="form_input">
-                                                <label for="model-select">Комплектация</label>
-                                                <select name="model" id="model-select">
-                                                    <option value="">--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
-                                                    <option value="s7-hybrid">Deepal SL03 Hybrid</option>
-                                                    <option value="s7-electro">Deepal SL03 Electro</option>
+                                                <label for="model-select-2" class="data-model-preComplection"
+                                                    data-model-preComplection>Комплектация</label>
+                                                <select name="model" id="model-select-2">
+                                                    <option value="" class="data-model-choose-complection"
+                                                        data-model-choose-complection>--ВЫБЕРИТЕ КОМПЛЕКТАЦИЮ</option>
+                                                    <option value="sl03-hybrid">Deepal SL03 Hybrid</option>
+                                                    <option value="sl03-electro">Deepal SL03 Electro</option>
                                                 </select>
                                             </form>
                                         </div>
                                         <div class="input  seelct_input">
                                             <form class="form_input">
-                                                <label for="diler-select">ВЫБОР ДИЛЛЕРА</label>
-                                                <select name="diler" id="diler-select">
-                                                    <option value="">--ВЫБЕРИТЕ ДИЛЛЕРА</option>
-                                                    <option value="tashkent-diler">ТАШКЕНТ</option>
-                                                    <option value="kibrai-diler">КИБРАЙ</option>
+                                                <label for="diler-select-2" class="diler_select" data-model-diler>ВЫБОР
+                                                    ДИЛЛЕРА</label>
+                                                <select name="diler" id="diler-select-2">
+                                                    <option value="" class="diler_select" data-model-diler>--ВЫБЕРИТЕ
+                                                        ДИЛЛЕРА</option>
+                                                    <option value="tashkent-diler" class="tashkent-diler"
+                                                        data-model-tashkent>ТАШКЕНТ</option>
+                                                    <option value="kibrai-diler" class="kibrai-diler" data-model-kibrai>
+                                                        КИБРАЙ</option>
                                                 </select>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="preOrder-section-head">
-                                        <h6 class="preOrder-section-title">Ваши данные</h6>
+                                        <h6 class="preOrder-section-title" data-model-preOrder-section-title>Ваши данные
+                                        </h6>
                                     </div>
                                     <div class="input2 js-input">
                                         <div class="form-radio js-radio-group" data-name="legal_entity">
-                                            <a href="#" class="radio js-radio" data-value="2">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="individual" id="individual">
-                                                <span class="radio-label">Физическое лицо</span>
-                                            </a>
-                                            <a href="#" class="radio js-radio" data-value="1">
-                                                <!-- <span class="radio-input"></span> -->
-                                                <input type="radio" name="legal" id="legal">
-                                                <span class="radio-label">Юридическое лицо</span>
-                                            </a>
+                                            <div class="radio js-radio" data-value="2">
+                                                <input type="radio" class="custom-radio" name="entity_type_2"
+                                                    id="individual-2" value="2">
+                                                <label class="radio-label" data-model-invidual
+                                                    for="individual-3">Физическое лицо</label>
+                                            </div>
+                                            <div class="radio js-radio" data-value="1">
+                                                <input type="radio" class="custom-radio" name="entity_type_2"
+                                                    id="legal-2" value="1">
+                                                <label class="radio-label" data-model-legal for="legal-3">Юридическое
+                                                    лицо</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="group_inputs">
                                         <div class="input js-input input_fields ">
-                                            <div class="input-label">Имя</div>
-                                            <input type="text" name="name" class="input-field" id="crm-name">
+                                            <div class="input-label" data-name>Имя</div>
+                                            <input type="text" name="name" class="input-field" id="crm-name-2">
                                         </div>
                                         <div class="input js-input  input_fields">
-                                            <div class="input-label">Телефон</div>
-                                            <input type="tel" name="name" class="input-field" id="crm-phone">
+                                            <div class="input-label" data-phone>Телефон</div>
+                                            <input type="tel" name="name" class="input-field" id="crm-phone-2">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form_btn" onclick="sendForm()">Отправить</button>
+                                <button class="form_btn" data-send id="submitButton2"
+                                    onclick="sendForm(2, 'style2')">Отправить</button>
                             </div>
                         </div>
                     </div>
@@ -552,15 +573,15 @@
                     <div class="interior">
                         <div class="container">
                             <div class="interior_items">
-                                <h2 class="interior_title">Интерьер</h2>
+                                <h2 class="interior_title" data-model-interior>Интерьер</h2>
                                 <div class="interior_background">
                                     <div class="image_size">
-                                        <img src="images/interior/sl03-interior1.jpg" alt="">
+                                        <img src="images/interior/sl03-interior1.webp" alt="">
                                         <div class="interior1">
-                                            <span>Почувствуйте себя в салоне автомобиля ↓</span>
+                                            <span data-model-inside>Почувствуйте себя в салоне автомобиля ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/pano/60965#pvareaid=3454451"
                                                 target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -572,16 +593,17 @@
                     <div class="exterior">
                         <div class="container">
                             <div class="interior_items">
-                                <h2 class="interior_title">Экстерьер</h2>
+                                <h2 class="interior_title" data-model-exterior>Экстерьер</h2>
                                 <div class="interior_background">
 
                                     <div class="image_size">
-                                        <img src="images/exterior/SL03.jpg" alt="">
+                                        <img src="images/exterior/SL03_1.webp" alt="">
                                         <div class="interior1">
-                                            <span>Оцените внешний вид автомобиля не выходя из дома ↓</span>
+                                            <span data-model-outside>Оцените внешний вид автомобиля не выходя из дома
+                                                ↓</span>
                                             <a href="https://pano.autohome.com.cn/car/ext/60965?appversion="
                                                 target="_blank">
-                                                <img src="images/360_110x64.png" alt="icon 360 degrees"> </a>
+                                                <img src="images/360_110x64-1.png" alt="icon 360 degrees"> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -589,10 +611,11 @@
                         </div>
                     </div>
                 </section>
-                <section id="complection">
+                <!-- <section id="complection">
                     <div class="complete">
                         <div class="container">
-                            <h2 class="complete_title">Комплектация Deepal SL 03-131 plus REEV</h2>
+                            <h2 class="complete_title"><span data-model-complection>Комплектация</span> Deepal SL 03-131
+                                plus REEV</h2>
                             <div class="elementor-element elementor-element-c66cbd8 elementor-widget elementor-widget-html"
                                 data-id="c66cbd8" data-element_type="widget" data-widget_type="html.default">
                                 <div class="elementor-widget-container">
@@ -642,19 +665,20 @@
                                     </table>
                                 </div>
                             </div>
-                            <a href="download/sl03.pdf" download="sl03.pdf" class="download">Скачать файл
+                            <a href="download/sl03.pdf" download="sl03.pdf" class="download" data-model-download>Скачать
+                                файл
                                 комплектаций</a>
                         </div>
                     </div>
 
-                </section>
+                </section> -->
             </div>
         </section>
 
         <section>
             <div class="news_block" id="news">
                 <div class="container">
-                    <h2 class="news_title">Новости</h2>
+                    <h2 class="news_title" data-news>Новости</h2>
                     <div class="news_title_items">
                         <div class="news_title-item"></div>
                         <p class="news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis totam,
@@ -677,7 +701,7 @@
         <section>
             <div class="news_block" id="promotion">
                 <div class="container">
-                    <h2 class="news_title">Акции</h2>
+                    <h2 class="news_title" data-promotions>Акции</h2>
                     <div class="news_title_items">
                         <div class="news_title-item"></div>
                         <div class="news_title-item"></div>
@@ -688,7 +712,7 @@
         </section>
         <section>
             <div class="container">
-                <h2 class="battery_block-title">Преимущества</h2>
+                <h2 class="battery_block-title" data-advantages>Преимущества</h2>
             </div>
         </section>
         <section>
@@ -749,14 +773,14 @@
             <div class="bottom_menu">
                 <div class="container">
                     <div class="bottom_menu-items">
-                        <a href="#pre_order" class="bottom_item-link">
-                            <span>Предзаказ</span>
+                        <a href="#more-about" class="bottom_item-link pre_order-btn">
+                            <span data-preorder>Предзаказ</span>
                         </a>
-                        <a href="#" class="bottom_item-link">
-                            <span>Дилеры</span>
+                        <a href="contacts.html" class="bottom_item-link">
+                            <span data-dilers>Дилеры</span>
                         </a>
-                        <a href="#" class="bottom_item-link">
-                            <span>Тест-драйв</span>
+                        <a href="test-drive.html" class="bottom_item-link">
+                            <span data-test-drive>Тест-драйв</span>
                         </a>
                     </div>
                 </div>
@@ -768,49 +792,44 @@
         <div class="footer_nav">
             <div class="container">
                 <div class="footer_items">
-                    <div class="footer_logo">
+                    <!-- <div class="footer_logo">
                         <a href="index.html">
-                            <!-- <img src="images/logo1.png" alt=""> -->
                         </a>
-                    </div>
+                    </div> -->
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-pressCenter>
                             Пресс-центр
                         </li>
                         <li class="footer_list">
-                            <a href="#news" class="footer_link">Новости</a>
+                            <a href="#news" class="footer_link" data-news>Новости</a>
                         </li>
                     </ul>
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-service>
                             Сервис </li>
                         <li class="footer_list">
-                            <a href="" class="footer_link"> Записаться на сервис </a>
-                        </li>
-                        <li class="footer_list">
-                            <a href="" class="footer_link"> Гарантия </a>
+                            <a href="" class="footer_link" data-book-service> Записаться на сервис </a>
                         </li>
                     </ul>
                     <ul class="footer_links">
-                        <li class="footer_list footer_list-title">
+                        <li class="footer_list footer_list-title" data-buyer>
                             Покупателю </li>
                         <li class="footer_list">
-                            <a href="#pre_order" class="footer_link"> Предзаказ </a>
+                            <a href="#pre_order" class="footer_link" data-preorder> Предзаказ </a>
                         </li>
                         <li class="footer_list">
-                            <a href="" class="footer_link"> Где купить </a>
+                            <a href="contacts.html" class="footer_link" data-whereBuy> Где купить </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="fixed-element">
+    <!-- <div class="fixed-element">
         <div class="fixed_head">
             <span class="fixed_head-title"> Вам нужна помощь?</span>
             <div class="fixed_element-bloc">
                 <div class="image_avatar">
-                    <!-- <img src="images/image_avatar.jpg" alt=""> -->
                     <svg fill="#000000" height="50px" width="50px" version="1.1" id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 512 512" xml:space="preserve">
@@ -869,7 +888,7 @@
             </div>
         </form>
 
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
